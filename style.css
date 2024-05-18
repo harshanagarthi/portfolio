@@ -349,6 +349,10 @@ form .btn2 {
     #header {
         background-image: url(Images/Profile\ 1.png);
     }
+    .logo {
+        width: 100px;
+        height: 25px;
+    }
 
     .header-text {
         margin-top: 100%;
