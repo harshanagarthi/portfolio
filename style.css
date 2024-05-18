@@ -60,14 +60,28 @@ nav ul li a:hover::after {
     font-size: 30px;
 }
 .header-text h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 20px;
+}
+.name {
+    color: rgb(188, 23, 238);
+    font-family:cursive;
+    font-size: 50px;
+    transition: color 3s,font-size 3s;
 }
 
 /* ----------------About----------------------------   */
 
 #about {
     padding: 80px 0;
+}
+.about-me {
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 50;
+    font-style: italic;
+    line-height: 25px;
+    margin-bottom: 50px;
 }
 .row {
     display: flex;
@@ -168,6 +182,9 @@ nav ul li a:hover::after {
     margin-top: 20px;
     display: inline-block;
 }
+.services-list p {
+    line-height: 20px;
+}
 
 .services-list div:hover {
     background: #380840;
@@ -207,7 +224,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #e18df0);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -247,7 +264,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #913ca0;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -255,7 +272,7 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 .btn:hover {
-    background: #ff004f;
+    background: #913ca0;
 }
 
 /* _______________________________--CONTACT__________________ */
@@ -275,7 +292,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #ff004f;
+    color: #913ca0;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -293,13 +310,16 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 .social-icons a:hover {
-    color: #ff004f;
+    color: #913ca0;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #ff004f;
+    background: #925d9b;
+}
+.btn.btn2:hover {
+    background: #913ca0;
 }
 
 .contact-right form {
@@ -347,7 +367,7 @@ form .btn2 {
 
 @media only screen and (max-width:600px) {
     #header {
-        background-image: url(Images/Profile\ 1.png);
+        background-image: url(Images/smallProfile1.png);
     }
     .logo {
         width: 100px;
@@ -355,15 +375,22 @@ form .btn2 {
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 120%;
         font-size: 16px;
     } 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 20px;
+        /* transition: font-size 0.5s; */
+    }
+    .name {
+        color:#e18df0;
+        font-size: 25px;
+        transition: color 3s,font-size 3s;
     }
     .fa-regular, .fa-solid {
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
     
     nav ul {
@@ -379,12 +406,17 @@ form .btn2 {
     }
     nav ul li {
         display: block;
-        margin: 25px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #913ca0;
+        margin: 10px;
+    }
+    nav ul li:active {
+        color: #dd4f4f;
     }
     nav ul .fa-regular {
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 15px;
+        left: 150px;
         cursor: pointer;
     }
     .sub-title {
